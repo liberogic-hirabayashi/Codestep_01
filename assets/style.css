@@ -1,0 +1,132 @@
+.l-section {
+  padding: 80px 0 100px;
+}
+.l-section .l-inner {
+  margin: 0 auto;
+  width: min(100% - 80px, 960px);
+}
+@media screen and (max-width: 600px) {
+  .l-section .l-inner {
+    min-width: 0;
+    width: calc(100% - 30px);
+  }
+}
+.l-section .l-inner .sectionTitle {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.l-section .l-inner .sectionTitle h2 {
+  font-size: 32px;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 1px solid #383E45;
+}
+.l-section + .l-section {
+  padding: 0 0 110px;
+}
+
+.header__inner {
+  padding: 10px 50px;
+  margin: 0 auto;
+  max-width: 960px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .header__inner {
+    padding: 10px 15px;
+  }
+}
+.header__inner h1 {
+  height: 40px;
+  width: 120px;
+}
+.header__inner nav ul {
+  display: flex;
+}
+.header__inner nav ul li a {
+  font-size: 14.4px;
+  color: #24292E;
+  text-decoration: none;
+}
+.header__inner nav ul li + li {
+  margin-left: 30px;
+}
+
+.fv {
+  height: 600px;
+}
+
+.about__profile {
+  max-width: 528px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .about__profile {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+.about__profile .about__img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about__profile .about__img + .about__text {
+  margin-left: 30px;
+}
+@media screen and (max-width: 600px) {
+  .about__profile .about__img + .about__text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+.about__profile .about__text > div {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about__profile .about__text p {
+  font-size: 14.4px;
+}
+
+.bicycle__items {
+  display: grid;
+  max-width: 857.6px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17.2px;
+}
+@media screen and (max-width: 600px) {
+  .bicycle__items {
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+}
+.bicycle__items .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bicycle__items .card__thumb {
+  margin-bottom: 8px;
+}
+.bicycle__items .card__title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.bicycle__items .card__text {
+  font-size: 14.4px;
+}
+
+.footer {
+  text-align: center;
+}
+.footer small {
+  font-size: 8px;
+}/*# sourceMappingURL=style.css.map */
